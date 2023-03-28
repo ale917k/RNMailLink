@@ -19,11 +19,11 @@ function App(): JSX.Element {
             const body = 'Hello World';
 
             Linking.canOpenURL(
-              `mailto:feedback@nokkel.com?subject=${subject}&body=${body}`,
+              `mailto:feedback@company.com?subject=${subject}&body=${body}`,
             ).then(supported => {
               if (supported) {
                 Linking.openURL(
-                  `mailto:feedback@nokkel.com?subject=${subject}&body=${body}`,
+                  `mailto:feedback@company.com?subject=${subject}&body=${body}`,
                 );
               } else {
                 console.log('Link not supported');
